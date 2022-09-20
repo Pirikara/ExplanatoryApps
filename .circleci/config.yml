@@ -15,7 +15,7 @@ jobs:
     working_directory: ~/ExplanatoryApps
     steps:
       - checkout:
-        path: ~/ExplanatoryApps
+          path: ~/ExplanatoryApps
       - ruby/install-deps
 
 test:
