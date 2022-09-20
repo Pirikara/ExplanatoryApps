@@ -14,7 +14,7 @@ services:
     environment:
       RAILS_ENV: development
     volumes:
-      - .:/bbs_app
+      - .:/ExplanatoryApps
     ports:
       - "3000:3000"
     links:
