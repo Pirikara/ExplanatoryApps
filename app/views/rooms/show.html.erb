@@ -11,7 +11,7 @@
         <% if message.user == current_user %>
           <div class="message-container my-container">
             <div class="message-content">
-              <%= simple_format(message.content) %>
+              <%== message.content %>
               <div class="message-time my-time">
                 <i class="far fa-clock"></i>
                 <%= time_ago_in_words(message.created_at) %>
@@ -30,7 +30,7 @@
             </div>
             <div class="message-content">
               <div class="message-content__says">
-                <%= simple_format(message.content) %>
+                <%== message.content %>
                 <div class="message-time">
                   <i class="far fa-clock"></i>
                   <%= time_ago_in_words(message.created_at) %>
