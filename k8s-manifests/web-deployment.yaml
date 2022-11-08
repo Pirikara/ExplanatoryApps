@@ -33,6 +33,14 @@ spec:
               value: development
             - name: DB_HOST
               value: db
+        - name: seed
+          image: 599533428873.dkr.ecr.ap-northeast-1.amazonaws.com/hardening-lecture-app:latest
+          command: ["bundle", "exec", "rails", "db:seed"]
+          env:
+            - name: RAILS_ENV
+              value: development
+            - name: DB_HOST
+              value: db
       containers:
         - command: ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
           env:
